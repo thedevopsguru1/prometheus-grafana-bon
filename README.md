@@ -1,36 +1,39 @@
-# prometheus-grafana
+# Prometheus & Grafana
+## 1- Installing helm3 in kubernetes
+```
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+```
+```
+chmod 700 get_helm.sh
+```
+```
+./get_helm.sh
+```
+### Check helm version
+```
+helm version
+```
+## 2- Install prometheus and grafana on k8s using helm3
 
-```
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-```
+### Add the latest helm repository in Kubernetes
 ```
 helm repo add stable https://charts.helm.sh/stable
 ```
-
+### Add the Prometheus community helm chart in Kubernetes
 ```
-helm repo update
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 ```
-Create a Prometheus namespace
+### create prometheus namespace
 ```
 kubectl create ns prometheus
 ```
-Install & Loadbalancer
+### Installing prometheus & grafana to kubernetes
 ```
-helm install prometheus -n prometheus prometheus-community/kube-prometheus-stack --set alertmanager.enabled=false --set grafana.service.type=LoadBalancer
+helm install prometheus prometheus-community/kube-prometheus-stack -n prometheus
 ```
-Accessing Prometheus
-```
-kubectl port-forward deployment/prometheus-kube-prometheus-prometheus 9090
-```
-kubeclt 
-Accessing Grafana Service
-```
-kubectl port-forward deployment/prometheus-grafana 3000
-```
-Grafana password
-```
-kubectl get secret prometheus-grafana -n prometheus -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
-```
+
+
+
 
 Grafana Dashboard ID
 # 1-pods
