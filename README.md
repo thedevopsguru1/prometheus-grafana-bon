@@ -23,11 +23,16 @@ Install & Loadbalancer
 ```
 helm install prometheus -n prometheus prometheus-community/kube-prometheus-stack --set alertmanager.enabled=false --set grafana.service.type=LoadBalancer
 ```
-Service
+Accessing Prometheus
+```
+kubectl port-forward deployment/prometheus-kube-prometheus-prometheus 9090
+```
+kubeclt 
+Accessing Grafana Service
 ```
 kubectl port-forward deployment/prometheus-grafana 3000
 ```
-password
+Grafana password
 ```
 kubectl get secret prometheus-grafana -n prometheus -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
 ```
