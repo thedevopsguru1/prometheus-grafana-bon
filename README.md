@@ -99,3 +99,10 @@ prom-operator
 ```
 https://blog.lwolf.org/post/going-open-source-in-monitoring-part-iii-10-most-useful-grafana-dashboards-to-monitor-kubernetes-and-services/
 ```
+### Let try some of them:
+```
+9797
+```
+```
+11670
+```
