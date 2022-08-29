@@ -73,6 +73,25 @@ kubectl get svc -n prometheus
 ### Paste on the browser
 ![image](https://user-images.githubusercontent.com/107158398/187272460-ed162491-0674-41c3-bfda-dcbed970ba66.png)
 
+#### Username: 
+```
+admin
+```
+#### Password:
+```
+prom-operator
+```
+![image](https://user-images.githubusercontent.com/107158398/187272824-82ee5abf-7bbb-4566-b1f6-539d00c82462.png)
+
+### Let create a dashbord to see kubernetes objects( pods, services, ...)
+#### click on dashbord , then import.
+![image](https://user-images.githubusercontent.com/107158398/187273215-30a1ed69-5b42-431c-bce1-24af17a77b59.png)
+#### On Import via grafana.com put 741 and click on load
+![image](https://user-images.githubusercontent.com/107158398/187273449-4f52ed35-8dc0-4c78-884e-21ffd29924f5.png)
+#### Prometheus at the bottom  , select "Prometheus"
+![image](https://user-images.githubusercontent.com/107158398/187273656-d335f971-4e2f-427f-b006-0dbd95d6e99e.png)
+#### then click on Import
+![image](https://user-images.githubusercontent.com/107158398/187273729-9e41634f-5d24-4ede-990c-a9656a326cc9.png)
 
 
 
