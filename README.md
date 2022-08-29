@@ -51,6 +51,28 @@ kubectl edit svc prometheus-grafana -n prometheus
 #### click I then edit it by changer type: clusterIP to LoadBalancer
 
 
+## Accessing Prometheus
+### Look for Services:
+```
+kubectl get svc -n prometheus
+```
+### Look for "prometheus-kube-prometheus-prometheus" and select the "EXTERNAL-IP" and the port 9090
+### Paste on the browser
+![image](https://user-images.githubusercontent.com/107158398/187271606-343040ac-8c36-4ef7-96a0-7ab576d281a2.png)
+### Let play a little bit with prometheus.
+## As you can see prometheus UI is not user friendly.
+## to fix this , we can use user friendly UI ,named Grafana.
+### Accessing Grafana
+### Look for Services:
+```
+kubectl get svc -n prometheus
+```
+### Look for "prometheus-grafana" and select the "EXTERNAL-IP" and the port 80
+![image](https://user-images.githubusercontent.com/107158398/187272352-50eddd7e-86a1-4a25-8735-9929397ae806.png)
+
+### Paste on the browser
+![image](https://user-images.githubusercontent.com/107158398/187272460-ed162491-0674-41c3-bfda-dcbed970ba66.png)
+
 
 
 
