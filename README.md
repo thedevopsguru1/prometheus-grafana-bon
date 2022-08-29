@@ -15,14 +15,13 @@ helm repo add stable https://charts.helm.sh/stable
 ```
 helm repo update
 ```
-Service
-```
-kubectl port-forward deployment/prometheus-grafana 3000
-```
-
 Install & Loadbalancer
 ```
 helm install prometheus -n prometheus prometheus-community/kube-prometheus-stack --set alertmanager.enabled=false --set grafana.service.type=LoadBalancer
+```
+Service
+```
+kubectl port-forward deployment/prometheus-grafana 3000
 ```
 password
 ```
