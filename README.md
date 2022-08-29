@@ -94,15 +94,8 @@ prom-operator
 ![image](https://user-images.githubusercontent.com/107158398/187273729-9e41634f-5d24-4ede-990c-a9656a326cc9.png)
 
 
-
-
-
-Grafana Dashboard ID
-# 1-pods
-```
-1471
-```
-# 2- 
+# Grafana Dashboard ID
+### Please , if you need more Dashboard ID , use the link below
 ```
 https://blog.lwolf.org/post/going-open-source-in-monitoring-part-iii-10-most-useful-grafana-dashboards-to-monitor-kubernetes-and-services/
 ```
