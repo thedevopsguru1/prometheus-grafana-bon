@@ -32,6 +32,17 @@ kubectl create ns prometheus
 helm install prometheus prometheus-community/kube-prometheus-stack -n prometheus
 ```
 
+### Check if we have deployed all
+```
+kubectl get all -n prometheus
+```
+#### We should see a lot of objects.
+### Edit prometheus service to Loadbalancer
+```
+kubectl edit svc prometheus-kube-prometheus-prometheus -n prometheus
+```
+#### click I then edit it by changer type: clusterIP to LoadBalancer
+![image](https://user-images.githubusercontent.com/107158398/187269632-0a8aa705-7b1a-44dd-939b-5eb64299d891.png)
 
 
 
