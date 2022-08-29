@@ -44,6 +44,16 @@ kubectl edit svc prometheus-kube-prometheus-prometheus -n prometheus
 #### click I then edit it by changer type: clusterIP to LoadBalancer
 ![image](https://user-images.githubusercontent.com/107158398/187269632-0a8aa705-7b1a-44dd-939b-5eb64299d891.png)
 
+### Edit grafana service to Loadbalancer
+```
+kubectl edit svc prometheus-grafana -n prometheus
+```
+#### click I then edit it by changer type: clusterIP to LoadBalancer
+
+
+
+
+
 
 
 Grafana Dashboard ID
