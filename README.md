@@ -32,6 +32,8 @@ kubectl create ns prometheus
 ```
 helm install prometheus prometheus-community/kube-prometheus-stack -n prometheus
 ```
+### If everything went weel , you should see a similar output:
+![image](https://user-images.githubusercontent.com/107158398/187321763-1ec886db-0268-4943-8ca0-693ff914c1b8.png)
 
 ### Check if we have deployed all
 ```
