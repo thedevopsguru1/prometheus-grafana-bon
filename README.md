@@ -14,7 +14,8 @@ chmod 700 get_helm.sh
 helm version
 ```
 ## 2- Install prometheus and grafana on k8s using helm3
-
+## Connect to you cluster: 
+https://github.com/devopstrainingschool/Connecting-to-kubernetes-cluster
 ### Add the latest helm repository in Kubernetes
 ```
 helm repo add stable https://charts.helm.sh/stable
