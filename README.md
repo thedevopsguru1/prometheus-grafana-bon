@@ -24,13 +24,12 @@ helm repo add stable https://charts.helm.sh/stable
 ```
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 ```
-### create prometheus namespace
 ```
-kubectl create ns prometheus
+ helm repo update
 ```
 ### Installing prometheus & grafana to kubernetes
 ```
-helm install prometheus prometheus-community/kube-prometheus-stack -n prometheus
+helm upgrade --install prometheus prometheus-community/kube-prometheus-stack -n prometheus --create-namespace -f values.yml
 ```
 ### If everything went weel , you should see a similar output:
 ![image](https://user-images.githubusercontent.com/107158398/187321763-1ec886db-0268-4943-8ca0-693ff914c1b8.png)
