@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
- name: prometheus-ingress
+ name: grafana-ingress
  namespace: prometheus
  annotations:
    cert-manager.io/cluster-issuer: "letsencrypt-prod"
