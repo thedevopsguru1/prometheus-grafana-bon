@@ -342,7 +342,7 @@ alertmanager:
       cert-manager.io/cluster-issuer: "letsencrypt-prod"
       kubernetes.io/tls-acme: 'true'
       nginx.ingress.kubernetes.io/ssl-passthrough: "true"
-      nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+      # nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 
     labels: {}
 
@@ -903,7 +903,7 @@ grafana:
       cert-manager.io/cluster-issuer: "letsencrypt-prod"
       kubernetes.io/tls-acme: 'true'
       nginx.ingress.kubernetes.io/ssl-passthrough: "true"
-      nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+      # nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
       # kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
 
@@ -2700,7 +2700,7 @@ prometheus:
       cert-manager.io/cluster-issuer: "letsencrypt-prod"
       kubernetes.io/tls-acme: 'true'
       nginx.ingress.kubernetes.io/ssl-passthrough: "true"
-      nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+      # nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
     labels: {}
 
     ## Redirect ingress to an additional defined port on the service
